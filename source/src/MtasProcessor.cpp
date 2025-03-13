@@ -514,7 +514,7 @@ bool MtasProcessor::Process(RawEvent &event)
 			double timeDiffBB = fabs((time2ndBetaevent - time1stBetaevent)*100000000.0);//calculate time difference in ns
 			plot(MTAS_POSITION_ENERGY+700, timeDiffBB);//plot time difference between two beta events
 			plot(MTAS_POSITION_ENERGY+368,totalMtasEnergy.at(0) / 10.0, timeDiffBB);
-			if (timeDiffBB > 300.0 + EPSILON && timeDiffBB < 750.0 - EPSILON)
+			if (timeDiffBB > 300.0 + EPSILON && timeDiffBB < 800.0 - EPSILON)
 			{
 				for(int j=0; j<totalMtasEnergy.size(); j++){
 				plot(MTAS_POSITION_ENERGY+280+j, previousEventEnergyBB.at(j));//1st beta event hist
