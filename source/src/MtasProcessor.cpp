@@ -562,7 +562,7 @@ bool MtasProcessor::Process(RawEvent &event)
 			plot(MTAS_POSITION_ENERGY+370,totalMtasEnergy.at(1) / 10.0, timeDiffBnotB);
 			plot(MTAS_POSITION_ENERGY+372,(totalMtasEnergy.at(2)+totalMtasEnergy.at(3)+totalMtasEnergy.at(4)) / 10.0, timeDiffBnotB);
 			plot(MTAS_POSITION_ENERGY+373,totalMtasEnergy.at(2) / 10.0, timeDiffBnotB);
-			if (timeDiffBnotB > 300.0 + EPSILON && timeDiffBnotB < 550.0 - EPSILON) {	
+			if (timeDiffBnotB > 300.0 + EPSILON && timeDiffBnotB < 800.0 - EPSILON) {	
 				//std::cout<<"timeDiffBnotB: "<<timeDiffBnotB<<std::endl;
 				if(!betaEnergy_recorded_once){
 					for(int j=0; j<totalMtasEnergy.size(); j++){
